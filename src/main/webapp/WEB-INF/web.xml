@@ -4,6 +4,16 @@
 <web-app>
 
   <display-name>Archetype Created Web Application</display-name>
+    <filter>
+        <filter-name>logHeaders</filter-name>
+        <filter-class>ro.teamnet.z2h.web.HeadersLogFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>logHeaders</filter-name>
+        <servlet-name>HelloWorld</servlet-name>
+    </filter-mapping>
+
+
     <servlet>
         <servlet-name>HelloWorld</servlet-name>
         <description>HelloWorld Servlet</description>
