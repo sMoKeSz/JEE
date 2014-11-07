@@ -6,19 +6,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * Created by user on 11/6/2014.
- */
+
+
 public class ZeroToHeroServlet extends HttpServlet {
 
     private String handleRequest (HttpServletRequest req){
         String response;
 
-        response = "Hello <b>"+ req.getParameter("firstName")+" "+req.getParameter("lastName")+ "</b>! Enjoy Zero To Hero!!! <br>" +req.getHeader("Accept");
+        response = "Hello <b>"+ req.getParameter("firstName")+" "+req.getParameter("lastName")+ "</b>! Enjoy Zero To Hero!!! <br>";
 
-        req.getHeaderNames();
+
         return response;
-
     }
 
     @Override
