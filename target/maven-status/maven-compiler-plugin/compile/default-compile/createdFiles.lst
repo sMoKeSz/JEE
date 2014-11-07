@@ -1,2 +1,13 @@
 ro\teamnet\z2h\web\ZeroToHeroServlet.class
+ro\teamnet\z2h\utils\DatabaseManager.class
+ro\teamnet\z2h\views\EmployeeView.class
+ro\teamnet\z2h\utils\ResultSetToPojoConverter.class
+ro\teamnet\z2h\dao\EmployeeViewDao.class
+ro\teamnet\z2h\dao\JobDao.class
+ro\teamnet\z2h\domain\Department.class
+ro\teamnet\z2h\domain\Employee.class
+ro\teamnet\z2h\domain\Job.class
+ro\teamnet\z2h\dao\EmployeeDao.class
 ro\teamnet\z2h\web\HelloWorldServlet.class
+ro\teamnet\z2h\App.class
+ro\teamnet\z2h\dao\DepartmentDao.class
