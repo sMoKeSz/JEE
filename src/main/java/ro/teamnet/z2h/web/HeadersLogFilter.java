@@ -34,10 +34,17 @@ public class HeadersLogFilter implements Filter {
      */
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-       //TODO completeaza cu cod astfel incat sa poti loga headerele de pe request intr-un fisier.
-       // Clasa care va scrie intr-un fisier de log este LogFileWriter metoda   logHeader
 
-        chain.doFilter(request, response);
+        Enumeration x =   ((HttpServletRequest) request).getHeaderNames();
+
+        while(x.hasMoreElements()){
+            String head = (String)x.nextElement();
+            String val = ((HttpServletRequest) request).getHeader(head);
+            LogFileWriter.logHeader(head,val);
+        }
+
+
+      chain.doFilter(request, response);
     }
 
     @Override
